@@ -1,5 +1,15 @@
+/*Variables*/
+:root {
+    --black: #25221D;
+    --cream: #FEF5D2;
+    --orange: #FF4500;
+    --sienna: #B76F4E;
+}
+
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
+/*Reset & Defaults*/
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +17,177 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Pompiere', cursive;
-
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1,
 h2 {
     font-weight: 400;
+}
+
+
+
+#navbar {
+    background-color: var(--black);
+    color: var(--cream);
+    position: fixed;
+    box-shadow:  1px 1px 4px 1px #FF4500;
+
+    border-radius: 4px;
+    font-size: 12px;
+
+    height: 36px;
+    width: 980px;
+
+    margin: 0 auto;
+    top: 80px;
+    right: 0;
+    left: 0;
+
+    /*z-index: 9998;*/
+}
+
+#navbar:hover{
+    box-shadow:  1px 1px 4px 1px #B76F4E;
+
+}
+
+#links{
+    height: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #FEF5D2;    
+    
+}
+
+#links li{       
+    font-size: 1.2em;
+        
+}
+#links li a span:hover{
+    color: #FF4500;
+    text-transform: uppercase;
+}
+
+.main-container{
+    
+    max-width: 100%;
+    height:67vh;
+    background-image: url("/images/chocolate-main.jpg");
+    color: #FEF5D2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+section{  
+    width: 80%;
+    display: flex; 
+    justify-content: center;
+    
+    
+    
+    
+}
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1.4fr 1fr ;
+    text-align: center;
+    background-color: rgba(37, 34, 29, 0.5);
+    box-shadow: 1px 1px 4px 1px #B76F4E;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 60px;
+    
+    
+}
+.header:hover{
+    box-shadow: 1px 1px 4px 1px #FEF5D2;
+    border-radius: 10px;
+
+}
+
+.header h1{
+    font-size: 3.5em;
+    
+}
+.header h2{
+    font-size: 1.8em;
+}
+.header p{
+font-size: 1.6em;
+}
+.header h1:hover{
+    font-size: 3.8em;
+}
+.header h2:hover{
+    font-size: 2em;
+}
+.header p:hover{
+    font-size: 1.8em;
+    }
+aside ul{
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2px;
+    box-shadow: 1px 1px 4px 1px #B76F4E;
+}
+
+#chocolate-cake{
+    
+    background-image: url("images/chocolate-cake.jpg");
+    background-size: cover;
+
+    height: 200px;
+}
+#chocolate-cupcakes{
+    
+    background-image: url("images/chocolate-cupcakes.jpg");
+    background-size: cover;
+    height: 200px;
+}
+#chocolate-ice-cream{
+    
+    background-image: url("images/chocolate-ice-cream.jpg");
+    background-size: cover;
+    height: 200px;
+}
+#chocolate-candy{
+    
+    background-image: url("images/chocolates-candy.jpg");
+    background-size: cover;
+    height: 200px;
+}
+#chocolate-cake:hover,
+#chocolate-cupcakes:hover,
+#chocolate-ice-cream:hover,
+#chocolate-candy:hover{
+    border: 0.5px solid #FF4500;
+    box-shadow: 1px 4px 20px 2px #B76F4E;
+    border-radius: 2px;
+}
+
+
+footer{
+    display: grid;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    grid-template-rows: 1fr 1fr;
+    
+    margin-top: 20px;
 }
