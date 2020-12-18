@@ -79,7 +79,7 @@ h2 {
     
     max-width: 100%;
     height:67vh;
-    background-image: url("/images/chocolate-main.jpg");
+    background-image: url("images/chocolate-main.jpg");
     color: #FEF5D2;
     
     display: flex;
